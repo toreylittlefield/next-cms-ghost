@@ -72,7 +72,7 @@ export const Layout = ({ settings, header, children, isHome, sticky, previewPost
               <Link href="/">
                 <a>{text(`LATEST_POSTS`)}</a>
               </Link>
-              {site.facebook && (
+              {/* {site.facebook && (
                 <a href={facebookUrl} target="_blank" rel="noopener noreferrer">
                   Facebook
                 </a>
@@ -84,16 +84,16 @@ export const Layout = ({ settings, header, children, isHome, sticky, previewPost
               )}
               <a href="https://www.jamify.org" target="_blank" rel="noopener noreferrer">
                 Jamify
-              </a>
+              </a> */}
             </nav>
           </div>
         </footer>
       </div>
 
-      {memberSubscriptions && <SubscribeSuccess {...{ title, lang }} />}
+      {/* {memberSubscriptions && <SubscribeSuccess {...{ title, lang }} />} */}
 
       {/* The big email subscribe modal content */}
-      {memberSubscriptions && <SubscribeOverlay {...{ settings }} />}
+      {/* {memberSubscriptions && <SubscribeOverlay {...{ settings }} />} */}
     </>
   )
 }

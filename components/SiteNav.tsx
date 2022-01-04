@@ -98,7 +98,7 @@ export const SiteNav = ({ settings, className, postTitle }: SiteNavProps) => {
           </div>
         )}
         <DarkMode {...{ settings }} />
-        {memberSubscriptions && <SubscribeButton {...{ lang: settings.lang }} />}
+        {/* {memberSubscriptions && <SubscribeButton {...{ lang: settings.lang }} />} */}
       </div>
     </nav>
   )
