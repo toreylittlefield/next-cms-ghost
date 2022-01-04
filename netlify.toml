@@ -1,7 +1,7 @@
 [build]
-  command = "yarn build"
+  command = "yarn export"
   functions = "out_functions"
-  publish = "out_publish"
+  publish = "out"
 
 [build.environment]
   JAMIFY_NEXT_ISR = "false"
