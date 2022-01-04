@@ -1,5 +1,5 @@
 [build]
-  command = "yarn export"
+  command = "yarn build"
   functions = "out_functions"
   publish = "out"
 
