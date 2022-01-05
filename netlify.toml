@@ -1,12 +1,20 @@
 [build]
   functions = "out_functions"
   publish   = "out_publish"
-  command   = "npm run build"
+  command   = "yarn build-prod"
 
 [build.environment]
   JAMIFY_NEXT_ISR = "false"
   JAMIFY_NEXT_FEATURE_IMAGES = "false"
   JAMIFY_NEXT_INLINE_IMAGES = "false"
+
+[dev]
+  functions = "out_functions"
+  publish   = "out_publish"
+  # We manually set the framework to static, otherwise Netlify automatically
+  # detects Next.js and redirects do not work.
+  # Read more: https://github.com/netlify/cli/blob/master/docs/netlify-dev.md#project-detection
+  framework = "#static"
 
 # [[plugins]]
 #   package = "@netlify/plugin-nextjs"
