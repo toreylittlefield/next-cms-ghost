@@ -32,7 +32,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "exp": "next export",
     "export": "cross-env IS_EXPORT=true next build && next export",
     "clean": "rm -rf .cache public/images",
     "format": "prettier --write **/*.{js,ts,tsx}",
