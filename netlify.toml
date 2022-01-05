@@ -18,8 +18,8 @@
   # Read more: https://github.com/netlify/cli/blob/master/docs/netlify-dev.md#project-detection
   framework = "#static"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+# [[plugins]]
+  # package = "@netlify/plugin-nextjs"
 
 [[plugins]]
   package = "netlify-plugin-cache-nextjs"
