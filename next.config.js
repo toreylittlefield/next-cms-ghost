@@ -6,6 +6,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 const defaultOptions = withBundleAnalyzer({
   ...(process.env.NETLIFY === 'true' && { target: 'serverless' }),
+  target: 'serverless',
   images: {
     deviceSizes: [320, 500, 680, 1040, 2080, 2048, 3120],
     domains: [
@@ -33,6 +34,7 @@ const customImageLoaderOptions = withBundleAnalyzer(
   withImageLoader({
     ...(process.env.NETLIFY === 'true' && { target: 'serverless' }),
     // https://nextjs.org/docs/api-reference/next/image#loader
+    target: 'serverless',
     images: {
       loader: 'custom',
     },
